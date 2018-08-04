@@ -1,0 +1,22 @@
+{
+  "name": "universito-db",
+  "version": "1.0.0",
+  "description": "A Simple Platform IoT - DB Module",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romuloban/universito.git"
+  },
+  "author": "Romulo Bañares <romulo88@hotmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/romuloban/universito/issues"
+  },
+  "homepage": "https://github.com/romuloban/universito#readme",
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
+}
