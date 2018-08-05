@@ -4,6 +4,7 @@
   "description": "A Simple Platform IoT - DB Module",
   "main": "index.js",
   "scripts": {
+    "setup": "DEBUG=universito:* node setup.js",
     "lint": "standard"
   },
   "repository": {
@@ -20,6 +21,7 @@
     "standard": "^11.0.1"
   },
   "dependencies": {
+    "debug": "^3.1.0",
     "pg": "^7.4.3",
     "pg-hstore": "^2.3.2",
     "sequelize": "^4.38.0"
