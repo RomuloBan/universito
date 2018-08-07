@@ -28,6 +28,6 @@ module.exports = {
   all: agents,
   connected: agents.filter(a => a.connected),
   universito: agents.filter(a => a.username === 'universito').shift(),
-  byUuid: id => agents.filter(a => a.uuid === id).shift(),
+  findByUuid: id => agents.filter(a => a.uuid === id).shift(),
   findById: id => agents.filter(a => a.id === id).shift()
 }
