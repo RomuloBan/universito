@@ -1,0 +1,28 @@
+{
+  "name": "universito-mqtt",
+  "version": "1.0.0",
+  "private": true,
+  "description": "A Simple IoT Platform - MQTT Server",
+  "main": "server.js",
+  "scripts": {
+    "start": "NODE_ENV=production node server.js",
+    "start-dev": "DEBUG=universito:* nodemon server.js",
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romuloban/universito.git"
+  },
+  "author": "Romulo Bañares <romulo88@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "nodemon": "^1.18.3",
+    "standard": "^11.0.1"
+  },
+  "dependencies": {
+    "chalk": "^2.4.1",
+    "debug": "^3.1.0",
+    "mosca": "^2.8.3",
+    "redis": "^2.8.0"
+  }
+}
