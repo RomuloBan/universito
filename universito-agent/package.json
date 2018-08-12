@@ -1,0 +1,18 @@
+{
+  "name": "universito-agent",
+  "version": "1.0.0",
+  "description": "A Simple IoT Platform - Agent",
+  "main": "index.js",
+  "scripts": {
+    "lint": "standard"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/romuloban.git"
+  },
+  "author": "Romulo Bañares <romulo88@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "standard": "^11.0.1"
+  }
+}
