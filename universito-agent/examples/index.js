@@ -1,9 +1,4 @@
-# universito-agent
-
-## Usage
-
-``` js
-const UniversitoAgent = require('universito-agent')
+const UniversitoAgent = require('../')
 
 const agent = new UniversitoAgent({
   name: 'myapp',
@@ -13,7 +8,7 @@ const agent = new UniversitoAgent({
 
 agent.addMetric('rss', function getRss () {
   return process.memoryUsage().rss
-}) 
+})
 
 agent.addMetric('promiseMetric', function getRandomPromise () {
   return Promise.resolve(Math.random())
@@ -42,5 +37,4 @@ function handler (payload) {
   console.log(payload)
 }
 
-setTimeout(() => agent.disconnect(), 20000)
-```
+setTimeout(() => agent.disconnect(), 10000)
