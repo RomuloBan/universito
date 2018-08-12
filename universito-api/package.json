@@ -5,6 +5,7 @@
   "description": "A Simple IoT Platform - API",
   "main": "server.js",
   "scripts": {
+    "test": "DEBUG=universito:* ava tests/ --verbose",
     "start": "NODE_ENV=production node server.js",
     "start-dev": "DEBUG=universito:* nodemon server.js",
     "lint": "standard"
@@ -16,8 +17,10 @@
   "author": "Romulo Bañares <romulo88@hotmail.com>",
   "license": "MIT",
   "devDependencies": {
+    "ava": "^0.25.0",
     "nodemon": "^1.18.3",
-    "standard": "^11.0.1"
+    "standard": "^11.0.1",
+    "supertest": "^3.1.0"
   },
   "dependencies": {
     "chalk": "^2.4.1",
