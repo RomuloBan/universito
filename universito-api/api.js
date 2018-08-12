@@ -2,9 +2,28 @@
 
 const debug = require('debug')('universito:api:routes')
 const express = require('express')
+const asyncify = require('express-asyncify')
+const db = require('universito-db')
 
-const api = express.Router()
+const config = require('./config')
 
+const api = asyncify(express.Router())
+
+let services, Agent, Metric
+
+api.use('*', async (req, res, next) => {
+  if (!services) {
+    debug('Connecting to database')
+    try {
+      services = await db(config.db)
+    } catch (err) {
+      return next(err)
+    }
+    Agent = services.Agent
+    Metric = services.Metric
+  }
+  next()
+})
 api.get('/agents', (req, res) => {
   debug('A request has come to /agents')
   res.send({})
